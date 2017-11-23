@@ -1,26 +1,30 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+      <Card style="width:320px">
+          <div style="text-align:center">
+              <h1>{{ msg }}</h1>
+          </div>
+      </Card>
   </div>
 </template>
 
-+<script>
+<script>
     export default {
       name: 'HelloWorld',
         data () {
           return {
             msg: 'Hello'
         }
-        }
+      }
     }
-    </script>
+</script>
 
 <style lang="scss" scoped>
-  .hello {
-    h1,
-    h2 {
-      color: #42b983;
-      font-weight: normal;
+    .hello {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateY(-50%) translateX(-50%);
+
     }
-  }
 </style>
