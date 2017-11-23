@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-      <Card style="width:320px">
+      <Card style="width:320px" dis-hover>
           <div style="text-align:center">
               <h1>{{ msg }}</h1>
           </div>
